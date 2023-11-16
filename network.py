@@ -113,7 +113,7 @@ class ResNet(nn.Module):
 
         return x
 
-def resnet50(num_classes=1000):
+def resnet50(num_classes=2):
     return ResNet(block=Bottleneck, block_num=[3, 4, 6, 3], num_classes=num_classes)
 
 
