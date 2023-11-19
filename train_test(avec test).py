@@ -88,7 +88,7 @@ def test(test_loader, net):
     # print(img_label_ls)
     with open(estimated_test_csv, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
-        csv_writer.writerow(['img name', 'estimated label']) 
+        csv_writer.writerow(['image_name', 'target']) 
         for img_label in img_label_ls:
             csv_writer.writerow(img_label)
 
